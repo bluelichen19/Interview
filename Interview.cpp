@@ -12,10 +12,6 @@ int printfStr(char* p,int len)
 	printf("\n");
 	return 0;
 }
-void debugPrintf(const int line,const char* function)
-{
-	printf("debug====%s====%d\n",function,line);
-}
 int reverseStr(char* p,int begin,int end)
 {
 	DEBUGMSG;
@@ -30,19 +26,19 @@ int reverseStr(char* p,int begin,int end)
 		begin++;
 		end--;
 	}
-//	debugPrintf("debug====%s====%d\n",__FUNCTION__,__LINE__);
+	DEBUGMSG;
 	return 0;
 }
 int rotataStr(char* p,int num,int len)
 {
-//	debugPrintf("debug====%s====%d\n",__FUNCTION__,__LINE__);
+	DEBUGMSG;
 	if(p == NULL || len <= 0)
 		return -1;
 	num %= len;
 	reverseStr(p,0,num-1);
 	reverseStr(p,num,len-1);
 	reverseStr(p,0,len-1);
-//	debugPrintf("debug====%s====%d\n",__FUNCTION__,__LINE__);
+	DEBUGMSG;
 	return 0;
 }
 int main(int argc,char* argv[])
