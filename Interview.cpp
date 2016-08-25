@@ -44,7 +44,8 @@ int rotataStr(char* p,int num,int len)
 int main(int argc,char* argv[])
 {
 	char p[]={'a','b','c','d','e','f'};
-	printfStr(p,6);
+
+    printfStr(p,6);
 	int ret = rotataStr(p,2,6);
 	printfStr(p,6);
 	printf("main function run complete!\n");
