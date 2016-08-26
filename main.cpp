@@ -59,6 +59,17 @@ void PrintBuffer(void* pBuff, unsigned int nLen)
 
     printf("------------------end-------------------\n");
 }
+
+int PrintfByte(char p[],int len)
+{
+    int m = 0;
+    for(m = 0;m<len;m++)
+    printf("-%c-",p[m]);
+    printf("\n");
+    printf("printf complete");
+    return 0;
+}
+
 int main(int argc ,char* argv[])
 {
     int ret;
@@ -66,8 +77,10 @@ int main(int argc ,char* argv[])
     DEBUGMSG;
     char p[]="abcdef";
 //    char p[]="abcdea";
-    ret = is_contain(p,sizeof(p)/sizeof(char));
+//    ret = is_contain(p,sizeof(p)/sizeof(char));
+    ret = reverse_str(p,sizeof(p)/sizeof(char));
     DEBUGMSG;
     printf("ret is %d\n",ret);
+    PrintfByte(p,sizeof(p)/sizeof(char));
     return ret;
 }

@@ -27,3 +27,24 @@ int is_contain(char p[], int len)
     }
     return ret;
 }
+
+/* ----------------------------------------------------------------------------*/
+/**
+ * @Synopsis  reverse_str 
+ *
+ * @Param p[]
+ * @Param len
+ *
+ * @Returns   
+ */
+/* ----------------------------------------------------------------------------*/
+int reverse_str(char p[],int len)
+{
+    int begin = 0;
+    int end = len-1;
+    while(begin<end)
+    {
+        std::swap(p[begin++],p[end--]);
+    }
+    return 0;
+}
