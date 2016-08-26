@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DEBUGMSG	main.cpp	/^      #define DEBUGMSG$/;"	d	language:C++	file:
+DEBUGMSG	main.cpp	/^#define DEBUGMSG /;"	d	language:C++	file:
+PrintBuffer	main.cpp	/^void PrintBuffer(void* pBuff, unsigned int nLen)$/;"	f	language:C++	signature:(void* pBuff, unsigned int nLen)
+_DEBUG	main.cpp	/^#define _DEBUG$/;"	d	language:C++	file:
+format	tags	/^!_TAG_FILE_FORMAT	2	\/extended format; --format=1 will not append ;" to lines\/$/;"	v	language:C++
+hash	interview_string.cpp	/^    int hash = 0;$/;"	l	language:C++
+i	main.cpp	/^    unsigned int i = 0;$/;"	l	language:C++
+idx	main.cpp	/^        int idx = 3 * (i % nBytePerLine);$/;"	l	language:C++
+is_contain	base.h	/^extern int is_contain(char p[], int len); $/;"	p	language:C++	signature:(char p[], int len)
+is_contain	interview_string.cpp	/^int is_contain(char p[], int len)$/;"	f	language:C++	signature:(char p[], int len)
+m	interview_string.cpp	/^    int m;$/;"	l	language:C++
+main	main.cpp	/^}int main(int argc ,char* argv[])$/;"	f	language:C++	signature:(int argc ,char* argv[])
+nBytePerLine	main.cpp	/^    const int nBytePerLine = 16;$/;"	l	language:C++
+p	main.cpp	/^    char p[]="abcdef";$/;"	l	language:C++
+p	main.cpp	/^    unsigned char* p = (unsigned char*)pBuff;$/;"	l	language:C++
+ret	interview_string.cpp	/^    int ret = 0;$/;"	l	language:C++
+ret	main.cpp	/^    int ret;$/;"	l	language:C++
+szHex	main.cpp	/^    char szHex[3*nBytePerLine+1];$/;"	l	language:C++

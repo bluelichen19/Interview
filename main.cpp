@@ -2,6 +2,8 @@
 #include <string.h>
 #include <memory.h>
 
+#include "base.h"
+
 #ifndef _DEBUG
 #define _DEBUG
 #endif
@@ -56,10 +58,16 @@ void PrintBuffer(void* pBuff, unsigned int nLen)
     }
 
     printf("------------------end-------------------\n");
-}int main(int argc ,char* argv[])
+}
+int main(int argc ,char* argv[])
 {
     int ret;
     ret = 0;
     DEBUGMSG;
+    char p[]="abcdef";
+//    char p[]="abcdea";
+    ret = is_contain(p,sizeof(p)/sizeof(char));
+    DEBUGMSG;
+    printf("ret is %d\n",ret);
     return ret;
 }
